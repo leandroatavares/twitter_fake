@@ -1,0 +1,13 @@
+<div class="login_box">
+  <div class="logo">
+    <%= image_tag("twitter_logo.png", class: "twitter_logo") %>
+  </div>
+    <%= form_tag(auth_create_login_path, class: "login_form") do %>
+      <%= email_field_tag('email', nil, placeholder: "Email", class: "form_field") %>
+      <%= password_field_tag('password', nil, placeholder: "Senha", class: "form_field") %>
+      <%= submit_tag("Entrar", class: "enter_button") %>
+    <%end%>
+    <div class="actions">
+      <%= link_to("Inscreva-se agora!", auth_signup_path)%>
+    </div>
+</div>

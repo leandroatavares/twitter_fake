@@ -1,0 +1,21 @@
+<div class="header">
+  <div class="container">
+    <div class="left">
+      <div class="home_text">
+        <%= link_to(root_path) do %>
+          <i class="fas fa-home"></i> <span>Página Inicial</span>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="logo"><%= image_tag "twitter_logo.png", class: "twitter_logo" %></div>
+    </div>
+
+    <div class="right">
+      <%= link_to(auth_logout_path) do %>
+        <div class="logout_btn">Sair</div>
+      <% end %>
+    </div>
+  </div>
+</div>

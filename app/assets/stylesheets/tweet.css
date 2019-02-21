@@ -1,0 +1,59 @@
+.dashboard .center .tweets_box .tweet_box {
+  margin-top: .05vw;
+  width: 100%;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 1vw 0 .6vw 0;
+  display: flex;
+}
+.dashboard .center .tweets_box .tweet_box:hover {
+  background-color: #f5f8fa;
+}
+
+.dashboard .center .tweets_box .tweet_box .user_picture {
+  width: 15%;
+}
+.dashboard .center .tweets_box .tweet_box .user_picture .img_profile {
+  margin-left: 1vw;
+  width: 2.3vw;
+}
+
+
+.dashboard .center .tweets_box .tweet_box .tweet_content {
+  width: 82%;
+}
+
+.dashboard .center .tweets_box .tweet_box .tweet_content .tweet_header {
+  color: #333;
+  font-size: .9vw;
+  font-weight: bold;
+}
+
+.dashboard .center .tweets_box .tweet_box .tweet_content .tweet_header span {
+  margin-left: 14vw;
+  color: #aaa;
+  font-size: .7vw;
+  font-weight: 100;
+}
+
+.dashboard .center .tweets_box .tweet_box .tweet_content .tweet_body {
+  margin-top: .5vw;
+  color: #222;
+  font-size: .8vw;
+}
+
+.dashboard .center .tweets_box .tweet_box .tweet_content .tweet_footer {
+  margin-top: 1.2vw;
+  color: #888;
+}
+.dashboard .center .tweets_box .tweet_box .tweet_content .tweet_footer .like {
+  width: 2.5vw;
+}
+.dashboard .center .tweets_box .tweet_box .tweet_content .tweet_footer .like:hover {
+  color: #f00;
+}
+.dashboard .center .tweets_box .tweet_box .tweet_content .tweet_footer span {
+  margin-left: .2vw;
+  font-size: .8vw;
+  font-weight: bold;
+}

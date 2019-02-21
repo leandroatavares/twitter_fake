@@ -1,0 +1,43 @@
+.login_box {
+  margin: auto;
+  margin-top: 12vw;
+  width: 20vw;
+  background-color: #fff;
+  padding: 1vw;
+}
+
+.login_box .logo {
+  margin: auto;
+  width: 3vw;
+}
+
+.login_box .twitter_logo {
+  width: 3vw;
+}
+
+.login_box .form_field {
+  margin-top: .5vw;
+  width: 95%;
+  height: 2vw;
+  border: solid .1px #ccc;
+  padding-left: 1vw;
+}
+
+.login_box .enter_button {
+  margin-top: .5vw;
+  width: 100%;
+  height: 2vw;
+  background-color: #4ab3f4;
+  border: 0;
+  border-radius: .1vw;
+  color: #fff;
+  font-size: .8vw;
+  font-weight: bold;
+}
+
+.login_box .actions {
+  margin-top: .5vw;
+  color: #333;
+  font-family: Helvetica;
+  font-size: .75vw;
+}

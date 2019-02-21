@@ -1,0 +1,11 @@
+<div class="tweet_box">
+
+  <div class="user_picture"><%= image_tag("profile_icon.png", class: "img_profile") %></div>
+
+  <div class="tweet_content">
+    <div class="tweet_header"><%= "#{user.name} #{user.surname}" %><span><%= tweet.created_at.strftime("%d/%m às %H:%M") %></span></div>
+    <div class="tweet_body"><%= tweet.content %></div>
+    <div class="tweet_footer"><div class="like" title="Curtir"><i class="far fa-heart"></i> <span>3</span></div></div>
+  </div>
+
+</div>

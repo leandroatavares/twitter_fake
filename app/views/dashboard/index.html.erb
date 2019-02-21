@@ -1,0 +1,57 @@
+<div class="dashboard">
+  <div class="container">
+
+    <div class="left">
+      <div class="profile_box">
+        <div class="top">
+          <div class="picture"><%= image_tag("profile_icon.png", class: "img_profile") %></div>
+        </div>
+        <div class="bottom">
+          <div class="main_data">
+            <div class="name"><%= "#{@user.name} #{@user.surname}" %></div>
+            <div class="email"><%= @user.email %></div>
+          </div>
+
+          <div class="secondary_data">
+            <div class="data_content tweets">Tweets <br><span><%= @tweets.count %></span></div>
+            <div class="data_content following">Seguindo <br><span>74</span></div>
+            <div class="data_content followers">Seguidores <br><span>21</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="center">
+      <div class="send_tweet_box">
+        <%= form_tag(create_tweet_path, class: "tweet_form") do %>
+          <%= text_field_tag "tweet", nil, class: "form_field", placeholder: "O que está acontecendo?" %>
+          <%= button_tag(type: "submit", class: "send_btn") do %>
+            <%= image_tag("send_icon.png", class: "send_icon") %>
+          <% end %>
+        <% end %>
+      </div>
+
+      <div class="tweets_box">
+        <% @tweets.each do |tweet| %>
+          <%= render partial: "tweet", locals: { tweet: tweet, user: @user } %>
+        <% end %>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="right">
+      <div class="advertising_1"></div>
+      <div class="advertising_2"></div>
+      <div class="advertising_3"></div>
+    </div>
+
+  </div>
+</div>

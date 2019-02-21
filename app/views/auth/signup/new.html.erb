@@ -1,0 +1,17 @@
+<div class="sign_up_box">
+  <div class="logo">
+    <%= image_tag("twitter_logo.png", class: "twitter_logo") %>
+  </div>
+    <%= form_tag(auth_create_signup_path, class: "login_form") do %>
+      <%= text_field_tag('name', nil, placeholder: "Nome", class: "form_field") %>
+      <%= text_field_tag('surname', nil, placeholder: "Sobrenome", class: "form_field") %>
+      <%= email_field_tag('email', nil, placeholder: "Email", class: "form_field") %>
+      <%= email_field_tag('email_confirm', nil, placeholder: "Confirme seu email", class: "form_field") %>
+      <%= password_field_tag('password', nil, placeholder: "Senha", class: "form_field") %>
+      <%= password_field_tag('password_confirm', nil, placeholder: "Confirme sua senha", class: "form_field") %>
+      <%= submit_tag("Cadastrar", class: "enter_button") %>
+    <%end%>
+        <div class="actions">
+      <%= link_to("Já tenho cadastro", auth_login_path)%>
+    </div>
+</div>

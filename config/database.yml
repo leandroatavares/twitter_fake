@@ -1,0 +1,20 @@
+
+default: &default
+  url: <%= ENV["API_DATABASE_URL"] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: twitter-fake_development
+
+test:
+  <<: *default
+  database: twitter-fake_test
+
+production:
+  <<: *default
+  database: twitter-fake_production
+  username: twitter-fake
+  password: <%= ENV['TWITTER-FAKE_DATABASE_PASSWORD'] %>

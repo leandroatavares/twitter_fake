@@ -1,0 +1,126 @@
+.dashboard {
+  margin-top: .7vw;
+  width: 100%;
+}
+.dashboard .container {
+  margin: auto;
+  width: 65%;
+  font-family: Helvetica;
+  display: flex;
+}
+.dashboard .left {
+  width: 26%;
+  height: 1vw;
+}
+.dashboard .left .profile_box {
+  width: 100%;
+  height: 12vw;
+  background-color: #fff;
+}
+.dashboard .left .profile_box .top {
+  height: 5.5vw;
+  background-color: #1da1f2;
+}
+.dashboard .left .profile_box .top .picture {
+  margin-top: 3.5vw;
+  margin-left: .7vw;
+  width: 4vw;
+  height: 4vw;
+  background-color: #fff;
+  border-radius: 100%;
+  padding: .15vw;
+  position: absolute;
+}
+.dashboard .left .profile_box .top .picture .img_profile {
+  width: 4vw;
+  border-radius: 100%;
+}
+.dashboard .left .profile_box .bottom .main_data {
+  margin-top: .3vw;
+  margin-left: 5.5vw;
+  width: 10vw;
+}
+.dashboard .left .profile_box .bottom .main_data .name {
+  font-size: .95vw;
+  font-weight: bold;
+}
+.dashboard .left .profile_box .bottom .main_data .email {
+  margin-top: .2vw;
+  color: #777;
+  font-size: .75vw;
+}
+.dashboard .left .profile_box .bottom .secondary_data {
+  display: flex;
+}
+.dashboard .left .profile_box .bottom .secondary_data .data_content {
+  margin-top: 1vw;
+  margin-left: 1vw;
+  height: 2.6vw;
+  color: #666;
+  font-size: .7vw;
+  font-weight: bold;
+  line-height: 1vw;
+}
+.dashboard .left .profile_box .bottom .secondary_data .data_content span {
+  color: #1da1f2;
+  font-size: 1vw;
+}
+.dashboard .center {
+  margin: 0 .7vw;
+  width: 47%;
+}
+.dashboard .center .send_tweet_box {
+  width: 100%;
+  height: 3vw;
+  background-color: #e8f5fd;
+}
+.dashboard .center .send_tweet_box .tweet_form .form_field {
+  margin-top: .55vw;
+  margin-left: 1vw;
+  width: 83.5%;
+  height: 1.7vw;
+  border-radius: .3vw;
+  border: solid .05vw #1da1f2;
+  padding-left: 1vw;
+  padding-right: 2vw;
+}
+.dashboard .center .send_tweet_box .tweet_form .form_field:focus {
+  outline: none;
+}
+.dashboard .center .send_tweet_box .tweet_form  .send_btn {
+  margin-top: .8vw;
+  margin-left: -2vw;
+  background-color: #fff0;
+  border: none;
+  position: absolute;
+}
+.dashboard .center .send_tweet_box .tweet_form  .send_btn:focus {
+  outline: none;
+}
+.dashboard .center .send_tweet_box .tweet_form .send_icon {
+  width: 1.3vw;
+}
+.dashboard .center .tweets_box {
+  width: 100%;
+  box-shadow: 1px 1px 1px #eee;
+}
+.dashboard .right {
+  width: 25%;
+}
+.dashboard .right .advertising_1 {
+  width: 100%;
+  height: 15vw;
+  background-color: #fff;
+}
+.dashboard .right .advertising_2 {
+  margin-top: .7vw;
+  width: 100%;
+  height: 10vw;
+  background-color: #fff;
+}
+.dashboard .right .advertising_3 {
+  margin-top: .7vw;
+  width: 100%;
+  height: 20vw;
+  background-color: #fff;
+}
